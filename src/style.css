@@ -1,0 +1,87 @@
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+
+  font-family: sans-serif;
+}
+
+a {
+  color: #4484CE;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.not-footer {
+  flex: 1 0 auto;
+}
+
+.header {
+  display: flex;
+  padding: 1em 0;
+}
+.logo a {
+  font-size: 1.7em;
+  color: white;
+}
+nav {
+  flex: 1;
+  align-items: center;
+  text-align: right;
+}
+.nav-links-container {
+  display: flex;
+  height: 100%;
+  justify-content: right;
+  align-items: center;
+}
+nav a {
+  color: white;
+  padding-left: 2em;
+}
+
+.footer {
+  flex-shrink: 0;
+  padding: 1em 0;
+  background-color: #171C2B;
+  color: white;
+}
+.social-links,
+.social-links li {
+  display: inline;
+  padding-right: 1em;
+}
+.social-links a {
+  color: white;
+}
+
+.row.dark {
+  background-color: #2B2B35;
+  color: white;
+}
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.headshot {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  border: 6px solid white;
+}
+
+.portfolio-row {
+  display: flex;
+  padding: 1em;
+}
+.portfolio-row .media {
+}
+.portfolio-row .description {
+  flex: 1;
+  padding-left: 1em;
+}
