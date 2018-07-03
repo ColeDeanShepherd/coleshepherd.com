@@ -8,6 +8,13 @@ body {
   font-family: sans-serif;
 }
 
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.6em;
+}
+
 a {
   color: #4484CE;
   text-decoration: none;
@@ -84,4 +91,7 @@ nav a {
 .portfolio-row .description {
   flex: 1;
   padding-left: 1em;
+}
+.portfolio-row .description h3 {
+  margin-top: 0;
 }

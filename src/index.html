@@ -12,8 +12,8 @@
 
 <body>
   <div class="not-footer">
-    <div style="background: linear-gradient(180deg,#1A2955,#5498C9 1000px); color: white;">
-      <div class="row">
+    <div style="background: linear-gradient(180deg,#1A2955,#5498C9 1000px); color: white; padding: 1.5em 0;">
+      <!--<div class="row">
         <div class="header content">
           <div class="logo"><a href="/">coleshepherd.com</a></div>
           
@@ -25,18 +25,25 @@
             </div>
           </nav>
         </div>
-      </div>
+      </div>-->
 
-      <div class="row" style="padding: 2em 0;">
-        <div class="content" style="width: 700px;">
+      <div class="row" style="margin-bottom: 1.5em;">
+        <div class="content" style="width: 760px;">
           <div style="display: flex;">
             <div style="margin-right: 2em;">
               <img src="https://avatars2.githubusercontent.com/u/4631326?s=460&v=4" class="headshot" />
             </div>
             <div style="display: flex; flex-direction: column; justify-content: center;">
               <div>
-                <p style="font-size: 1.8em; margin-top: 0;">Cole Shepherd</p>
-                <p style="font-size: 1.2em;">Passionate software engineer with experience in full-stack web development and game development.</p>
+                <p style="font-size: 2em; margin: 0 0 1rem 0;">Cole Shepherd</p>
+                <p style="font-size: 1.3em;">Passionate software engineer with experience in full-stack web development and game development.</p>
+                <ul class="social-links" style="padding: 2em 0 0 0;">
+                  <li><a href="https://github.com/ColeDeanShepherd" target="_blank">GitHub</a></li>
+                  <li><a href="https://www.linkedin.com/in/cole-shepherd/" target="_blank">LinkedIn</a></a></li>
+                  <li><a href="https://www.youtube.com/user/ColeDeanShepherd" target="_blank">YouTube</a></li>
+                  <li><a href="https://twitter.com/ColeDShepherd" target="_blank">Twitter</a></li>
+                  <li><a href="https://soundcloud.com/cole_dean_shepherd" target="_blank">SoundCloud</a></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -44,14 +51,31 @@
       </div>
     </div>
   
+    <!--<div class="row" style="text-align: center;">
+      <h2>Personal Projects</h2>
+    </div>-->
+
     <div class="row">
       <div class="portfolio-row content">
         <div class="media">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/ykEI0qrL_y4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
         <div class="description">
-          <h2><a href="https://github.com/ColeDeanShepherd/TESUnity">TESUnity</a></h2>
-          <p>A Morrowind world viewer in <a href="https://unity3d.com/">Unity</a>.</p>
+          <h3><a href="https://github.com/ColeDeanShepherd/TESUnity">TESUnity</a></h3>
+          <p>Explore the world of Morrowind with a keyboard and mouse or a VR headset in the <a href="https://unity3d.com/">Unity game engine</a>.</p>
+          <p>
+            Technical Details:
+            <ul>
+              <li>Written in C#.</li>
+              <li>Custom loaders for Morrowind's proprietary file formats and for DDS textures.</li>
+              <li>Asynchronous loading of assets on background threads while the viewer is running.</li>
+              <li>Object creation is spread out over several frames to reduce jitter, but executes only on the main thread due to limitations with Unity scripting API.</li>
+              <li>Persistent user-configurable settings.</li>
+              <li>Support for little-endian and big-endian CPUs.</li>
+              <li>Support for VR, courtesy of <a href="https://github.com/demonixis">Yannick Comte</a>.</li>
+            </ul>
+          </p>
+          <p><a href="https://github.com/ColeDeanShepherd/TESUnity" target="_blank">https://github.com/ColeDeanShepherd/TESUnity</a></p>
         </div>
       </div>
     </div>
@@ -62,15 +86,82 @@
           <iframe width="560" height="315" src="https://www.youtube.com/embed/jMxX7A-nWCo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
         <div class="description">
-          <h2>12 Steps to Navier Stokes</h2>
+          <h3><a href="https://github.com/ColeDeanShepherd/12-Steps-To-Navier-Stokes">12 Steps to Navier Stokes</a></h3>
+          <p><a href="12-Steps-To-Navier-Stokes.html">Click here to view in your browser.</a></p>
           <p>Implementations of the 12 steps in <a href="http://lorenabarba.com"></a>Lorena Barba's</a> course <a href="http://lorenabarba.com/blog/cfd-python-12-steps-to-navier-stokes/">12 Steps to Navier-Stokes</a>.</a></p>
+          <p>
+              Technical Details:
+              <ul>
+                <li>Written in C++ with SDL 2.</li>
+                <li>Numerical PDE solvers and linear algebra written from scratch.</li>
+                <li>Supports compilation with emscripten. <a href="">Try it here!</a></li>
+              </ul>
+            </p>
+            <p><a href="https://github.com/ColeDeanShepherd/12-Steps-To-Navier-Stokes" target="_blank">https://github.com/ColeDeanShepherd/12-Steps-To-Navier-Stokes</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="portfolio-row content">
+        <div class="media">
+        </div>
+        <div class="description">
+          <h3><a href="/witspur">WitSpur</a></h3>
+          <p><a href="">Click here to view in your browser.</a></p>
+          <p>Description goes here</p>
+          <p>
+            Technical Details:
+            <ul>
+            </ul>
+          </p>
+          <p><a href="https://github.com/ColeDeanShepherd/WitSpur" target="_blank">https://github.com/ColeDeanShepherd/WitSpur</a></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row dark">
+      <div class="portfolio-row content">
+        <div class="media">
+        </div>
+        <div class="description">
+          <h3><a href="https://github.com/ColeDeanShepherd/OSFPS">OSFPS</a></h3>
+          <p>An open-source, Halo-inspired multiplayer FPS.</p>
+          <p>
+            Technical Details:
+            <ul>
+              <li>Written in C# with Unity.</li>
+              <li>Client/server networking model with authoritative servers and client-side prediction.</li>
+              <li>Server-side lag compensation to improve hit detection for players with high latencies.</li>
+              <li>Custom, reflection-based RPC and state-synchronization code.</li>
+              <li>Delta-compression of state snapshots.</li>
+            </ul>
+          </p>
+          <p><a href="https://github.com/ColeDeanShepherd/OSFPS" target="_blank">https://github.com/ColeDeanShepherd/OSFPS</a></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="portfolio-row content">
+        <div class="media">
+        </div>
+        <div class="description">
+          <h3><a href="https://github.com/ColeDeanShepherd/TableType">TableType</a></h3>
+          <p>Description goes here</p>
+          <p>
+            Technical Details:
+            <ul>
+            </ul>
+          </p>
+          <p><a href="https://github.com/ColeDeanShepherd/TableType" target="_blank">https://github.com/ColeDeanShepherd/TableType</a></p>
         </div>
       </div>
     </div>
   
     <div class="row">
       <div class="portfolio-row content" style="display: block;">
-        <h2 style="text-align: center;"><a href="https://www.youtube.com/user/ColeDeanShepherd">YouTube</a></h2>
+        <h3 style="text-align: center;"><a href="https://www.youtube.com/user/ColeDeanShepherd">YouTube</a></h3>
   
         <div>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/mlApJigs6Zg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -85,11 +176,11 @@
     <div class="content">
       <span style="color: #CCC;">Follow Me:</span>
       <ul class="social-links">
-        <li><a href="https://github.com/ColeDeanShepherd">GitHub</a></li>
-        <li><a href="https://www.youtube.com/user/ColeDeanShepherd">YouTube</a></li>
-        <li><a href="https://soundcloud.com/cole_dean_shepherd">SoundCloud</a></li>
-        <li><a href="https://twitter.com/ColeDShepherd">Twitter</a></li>
-        <li><a href="https://www.linkedin.com/in/cole-shepherd/">LinkedIn</a></a></li>
+        <li><a href="https://github.com/ColeDeanShepherd" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/cole-shepherd/" target="_blank">LinkedIn</a></a></li>
+        <li><a href="https://www.youtube.com/user/ColeDeanShepherd" target="_blank">YouTube</a></li>
+        <li><a href="https://twitter.com/ColeDShepherd" target="_blank">Twitter</a></li>
+        <li><a href="https://soundcloud.com/cole_dean_shepherd" target="_blank">SoundCloud</a></li>
       </ul>
     </div>
   </div>
