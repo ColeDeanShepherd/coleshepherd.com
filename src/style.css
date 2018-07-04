@@ -86,7 +86,9 @@ nav a {
   display: flex;
   padding: 1em;
 }
-.portfolio-row .media {
+.portfolio-row .media img {
+  width: 560px;
+  height: 315px;
 }
 .portfolio-row .description {
   flex: 1;
