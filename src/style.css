@@ -1,62 +1,10 @@
-html, body {
-  height: 100%;
-}
-body {
-  display: flex;
-  flex-direction: column;
-
-  font-family: sans-serif;
-}
-
-h2 {
-  font-size: 2em;
-}
-h3 {
-  font-size: 1.6em;
-}
-
-a {
-  color: #4484CE;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-.not-footer {
-  flex: 1 0 auto;
-}
-
 .header {
-  display: flex;
-  padding: 1em 0;
-}
-.logo a {
-  font-size: 1.7em;
+  background: linear-gradient(180deg,#1A2955,#5498C9 1000px);
   color: white;
-}
-nav {
-  flex: 1;
-  align-items: center;
-  text-align: right;
-}
-.nav-links-container {
-  display: flex;
-  height: 100%;
-  justify-content: right;
-  align-items: center;
-}
-nav a {
-  color: white;
-  padding-left: 2em;
+  padding: 1.5em 0;
+  margin-bottom: 1em;
 }
 
-.footer {
-  flex-shrink: 0;
-  padding: 1em 0;
-  background-color: #171C2B;
-  color: white;
-}
 .social-links,
 .social-links li {
   display: inline;
@@ -66,55 +14,48 @@ nav a {
   color: white;
 }
 
-.row {
-  display: flex;
-  padding: 1em 0;
-}
-.row.dark {
-  background-color: #2B2B35;
-  color: white;
-}
-.row .col {
-  flex-grow: 1;
-}
-
-.content {
-  max-width: 1020px;
-  margin: 0 auto;
-}
-
 .headshot {
-  width: 200px;
+  max-width: 200px;
   height: auto;
   border-radius: 50%;
   border: 6px solid white;
 }
 
-.portfolio-row {
+.project-thumbnail-container {
   display: flex;
-  padding: 0 1em;
+  flex-direction: column;
+  justify-content: center;
 }
-.portfolio-row .media-container {
-  display: flex;
-  height: 100%;
-  align-items: center;
+
+.project-thumbnail {
+  max-width: 560px;
 }
-.portfolio-row .media {
-  width: 480px;
-  height: 270px;
-}
-.portfolio-row .media img {
+
+.project-thumbnail img {
   width: 100%;
   height: 100%;
 }
-.portfolio-row .media iframe {
+
+.youtube-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.youtube-video iframe {
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
-.portfolio-row .description {
-  flex: 1;
-  padding-left: 1em;
-}
-.portfolio-row .description h3 {
-  margin-top: 0;
+
+.footer {
+  flex-shrink: 0;
+  padding: 1em 0;
+  background-color: #171C2B;
+  color: white;
 }
